@@ -1,3 +1,32 @@
-<footer class="site-footer h-card">
- footer
+<footer class="footer">
+  <div class="container">
+    <div class="footer__logo-n-social">
+      <div class="footer__logo">
+        <a href="#">
+         <img src="assets/img/logo.svg" alt="Merklize">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="assets/icons/linkedin.svg" alt="Linkedin">
+        </a>
+        <a href="#">
+          <img src="assets/icons/twitter.svg" alt="Twitter">
+        </a>
+      </div>
+    </div>
+    <nav class="footer__menu">
+      <h3>HOME</h3>
+      <ul class="footer__menu-list">
+        <li><a href="#">CURRENT COURSES</a></li>
+        <li><a href="#">EVENT CALENDAR</a></li>
+        <li><a href="#">CONTACT</a></li>      
+      </ul>
+    </nav>
+    <div class="footer__contact">
+      <p>Lorem ipsum dolor sit amet 0000 Lorem ipsum</p>
+      <span>E-mail: <a class="footer__contact-link" href="mailto:{{ site.e-mail }}">{{ site.e-mail }}</a></span>
+      <span>Phone: <a class="footer__contact-link" href="tel:{{ site.phone }}">{{ site.phone }}</a></span>
+    </div>
+  </div>
 </footer>

@@ -1,0 +1,19 @@
+.footer {
+  background: #E2EFDE;
+  color: #2D2D2D;
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  height: 316px;
+}
+
+.footer__logo-n-social {
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 28px;
+}

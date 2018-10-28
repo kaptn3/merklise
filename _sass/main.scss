@@ -8,4 +8,6 @@
         'layouts/header',
         'layouts/footer';
 
-@import 'components/header-menu';
+@import 'components/header-menu',
+        'components/footer-menu.scss',
+        'components/footer-contact.scss';
