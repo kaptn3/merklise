@@ -1,3 +1,11 @@
-body {
-  color: #444;
-}
+@import 'vendor/normalize';
+
+@import 'base/root',
+        'base/fonts',
+        'base/reset';
+
+@import 'layouts/container',
+        'layouts/header',
+        'layouts/footer';
+
+@import 'components/header-menu';
