@@ -8,6 +8,10 @@
         'layouts/header',
         'layouts/footer';
 
-@import 'components/header-menu',
+@import 'components/header-nav',
+        'components/header-logo.scss',
+        'components/header-sign.scss',
         'components/footer-menu.scss',
         'components/footer-contact.scss';
+
+@import 'components/button.scss';
