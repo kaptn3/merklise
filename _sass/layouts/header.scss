@@ -1,8 +1,17 @@
+.header {
+  overflow: hidden;
+  background-image: url('/assets/img/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
 .header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 186px;
+  padding-top: 63px;
+  //height: 186px;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
 }
