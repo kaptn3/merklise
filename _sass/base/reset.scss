@@ -12,8 +12,9 @@ html {
 }
 
 body {
-  width: 100%;
-  min-width: 320px;
+  min-width: 1920px; // fallback
+  min-width: fit-content; 
+  //min-width: 320px;
 }
 
 div {
@@ -40,8 +41,8 @@ a:focus {
 }
 
 p {
-  line-height: 1.5;
-  margin: 0 0 1rem;
+  line-height: normal;
+  margin: 0 0 1em;
 }
 
 h1,
