@@ -1,0 +1,24 @@
+<section class="section-events">
+  <h2 class="h2-title section-events__title">Upcoming events</h2>
+  <div class="education__container">
+    <ul class="section-events__posts-list">
+    {% for post in site.categories['event'] limit:3 %}
+      <li class="section-events__post">
+        <a class="section-events__post-img" href="{{ post.url }}">
+          <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}">
+        </a>
+        <article class="section-event__post-article">
+          <div class="section-events__post-meta">
+            <span>{{ post.location }}</span>
+            <span><img src="/assets/icons/clock.svg" alt=""> {{ post.date | date: "%d.%m.%Y" }}</span>
+          </div>
+          <h3 class="section-events__post-title">{{ post.title }}</h3>
+          {{ post.excerpt }}
+          <a class="section-events__post-link" href="{{ post.url }}">Read more</a>
+        </article>
+      </li>
+    {% endfor %}
+    </ul>
+    <a class="btn btn_black section-events__show-btn" href="#">Show all</a>
+  </div>
+</section>
