@@ -15,6 +15,12 @@
         'components/footer-menu.scss',
         'components/footer-contact.scss';
 
+// sections
+@import 'components/sections/idea.scss',
+        'components/sections/courses.scss',
+        'components/sections/events.scss',
+        'components/sections/registration.scss',
+        'components/sections/partners.scss';
+
 @import 'components/button.scss',
-        'components/title.scss',
-        'components/section.scss';
+        'components/title.scss';
