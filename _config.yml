@@ -1,7 +1,7 @@
 
 title: Merklise
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kaptn.ru/merklise" # the base hostname & protocol for your site, e.g. http://example.com
 e-mail: "lorem@ipsum.com"
 phone: "+000 000 000"
 
