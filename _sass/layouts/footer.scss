@@ -3,7 +3,8 @@
   color: #2D2D2D;
 }
 
-.footer > .education__container {
+.footer > .education__container,
+.footer > .consulting__container {
   display: flex;
   justify-content: space-between; 
   align-items: center;
