@@ -12,7 +12,7 @@
             <span>{{ post.location }}</span>
             <span><img src="/assets/icons/clock.svg" alt=""> {{ post.date | date: "%d.%m.%Y" }}</span>
           </div>
-          <h3 class="section-events__post-title">{{ post.title }}</h3>
+          <a href="{{ post.url }}"><h3 class="section-events__post-title">{{ post.title }}</h3></a>
           {{ post.excerpt }}
           <a class="section-events__post-link" href="{{ post.url }}">Read more</a>
         </article>
