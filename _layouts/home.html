@@ -2,11 +2,19 @@
 layout: default
 ---
 
-{% include sections/idea.html %}
-{% include sections/courses.html %}
-{% include sections/events.html %}
-{% include sections/registration.html %}
-{% include sections/partners.html %}
+{%- include header.html -%}
+
+  <main class="page-content" aria-label="Content">
+    {% include sections/idea.html %}
+    {% include sections/courses.html %}
+    {% include sections/events.html %}
+    {% include sections/registration.html %}
+    {% include sections/partners.html %}
+  </main>
+
+{%- include footer.html -%}
+
+
 
 
 
