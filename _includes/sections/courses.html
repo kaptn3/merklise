@@ -1,9 +1,9 @@
-<section class="explore-section education__container">
+<section class="courses-section education__container">
   <article>
     <h2 class="h2-title">Explore new courses</h2>
-    <p class="explore-section__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natu. Excepteur sint occaecat cupidatat non.</p>
+    <p class="courses-section__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natu. Excepteur sint occaecat cupidatat non.</p>
   </article>
-  <div class="explore-section__types">
+  <div class="courses-section__types">
     <a href="#" class="btn">Blockchain 101</a>
     <a href="#" class="btn">Micro services</a>
     <a href="#" class="btn">Crypto trading</a>
@@ -11,4 +11,42 @@
     <a href="#" class="btn">Mining</a>
     <a href="#" class="btn">Fundamentals</a>
   </div>
+  <ul class="courses-section__posts">
+    {% for post in site.categories['course'] limit:4 %}
+    <li class="courses-section__post">
+      <a class="courses-section__img" href="{{ post.url }}">
+        <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}">
+      </a>
+      <div class="courses-section__post-content">
+        <article class="courses-section__article">
+          <header class="courses-section__article-title">
+            <h3>{{ post.title }}</h3>
+            <span>{{ post.level }}</span>
+          </header>
+          {{ post.excerpt }}
+          <span class="courses-section__article-teacher">{{ post.teacher }}</span>
+          <span class="courses-section__article-date"><img src="/assets/icons/clock.svg" alt=""> {{ post.date | date: "%d.%m.%Y" }}</span>
+        </article>
+        <div class="courses-section__info">
+          <div>
+            <span class="courses-section__info-price">$<strong>{{ post.price }}</strong>,99</span>
+            <div class="courses-section__info-rating">
+            {% for item in (1..5) %}
+              {% if item <= post.rating %}
+                <img src="/assets/icons/star.svg" alt="">
+              {% else %}
+                <img src="/assets/icons/no-star.svg" alt="">
+              {% endif %}
+            {% endfor %}
+            </div>
+          </div>
+          <a class="courses-section__info-more" href="{{ post.url }}">
+            <img src="/assets/icons/more.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="#" class="btn btn_black courses-section__btn">Explore all</a>
 </section>
