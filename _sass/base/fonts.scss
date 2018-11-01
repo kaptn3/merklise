@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,600,700');
 
+@font-face {
+  font-family: 'Google Sans';
+  src: url('GoogleSans.eot');
+  src: local('Google Sans'), local('GoogleSans-Regular'), 
+       url('../fonts/GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GoogleSans-Regular.woff') format('woff'),
+       url('../fonts/GoogleSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('GoogleSans.eot');
+  src: local('Google Sans'), local('GoogleSans-Medium'), 
+       url('../fonts/GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GoogleSans-Medium.woff') format('woff'),
+       url('../fonts/GoogleSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('GoogleSans.eot');
+  src: local('Google Sans'), local('GoogleSans-Bold'), 
+       url('../fonts/GoogleSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GoogleSans-Bold.woff') format('woff'),
+       url('../fonts/GoogleSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('GoogleSans.eot');
+  src: local('Google Sans'), local('GoogleSans-Italic'), 
+       url('../fonts/GoogleSans-Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GoogleSans-Italic.woff') format('woff'),
+       url('../fonts/GoogleSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
