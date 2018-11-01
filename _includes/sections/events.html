@@ -5,12 +5,12 @@
     {% for post in site.categories['event'] limit:3 %}
       <li class="section-events__post">
         <a class="section-events__post-img" href="{{ post.url }}">
-          <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}">
+          <img src="{{ '/assets/post-images/' | absolute_url }}{{ post.image }}" alt="{{ post.title }}">
         </a>
         <article class="section-event__post-article">
           <div class="section-events__post-meta">
             <span>{{ post.location }}</span>
-            <span><img src="/assets/icons/clock.svg" alt=""> {{ post.date | date: "%d.%m.%Y" }}</span>
+            <span><img src="{{ '/assets/icons/clock.svg' | absolute_url }}" alt=""> {{ post.date | date: "%d.%m.%Y" }}</span>
           </div>
           <a href="{{ post.url }}"><h3 class="section-events__post-title">{{ post.title }}</h3></a>
           {{ post.excerpt }}

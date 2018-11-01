@@ -15,7 +15,7 @@
     {% for post in site.categories['course'] limit:4 %}
     <li class="courses-section__post">
       <a class="courses-section__img" href="{{ post.url }}">
-        <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}">
+        <img src="{{ '/assets/post-images/' | absolute_url }}{{ post.image }}" alt="{{ post.title }}">
       </a>
       <div class="courses-section__post-content">
         <article class="courses-section__article">
@@ -25,7 +25,7 @@
           </header>
           {{ post.excerpt }}
           <span class="courses-section__article-teacher">{{ post.teacher }}</span>
-          <span class="courses-section__article-date"><img src="/assets/icons/clock.svg" alt=""> {{ post.date | date: "%d.%m.%Y" }}</span>
+          <span class="courses-section__article-date"><img src="{{ '/assets/icons/clock.svg' | absolute_url }}" alt=""> {{ post.date | date: "%d.%m.%Y" }}</span>
         </article>
         <div class="courses-section__info">
           <div>
@@ -33,15 +33,15 @@
             <div class="courses-section__info-rating">
             {% for item in (1..5) %}
               {% if item <= post.rating %}
-                <img src="/assets/icons/star.svg" alt="">
+                <img src="{{ '/assets/icons/star.svg' | absolute_url }}" alt="">
               {% else %}
-                <img src="/assets/icons/no-star.svg" alt="">
+                <img src="{{ '/assets/icons/no-star.svg' | absolute_url }}" alt="">
               {% endif %}
             {% endfor %}
             </div>
           </div>
           <a class="courses-section__info-more" href="{{ post.url }}">
-            <img src="/assets/icons/more.svg" alt="">
+            <img src="{{ '/assets/icons/more.svg' | absolute_url }}" alt="">
           </a>
         </div>
       </div>
