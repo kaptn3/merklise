@@ -1,0 +1,31 @@
+.subscribe-section {
+  background-image: url('../img/subscribe-section-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  height: 287px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.subscribe-section__form {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe-section__title {
+  font-family: 'Google Sans', sans-serif;
+  line-height: 66px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.subscribe-section__input {
+  font-size: 20px;
+  width: 686px;
+  padding: 19px 34px 14px 34px;
+  color: #0D4A59;
+}
