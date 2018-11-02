@@ -1,3 +1,4 @@
+a.btn,
 .btn {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
@@ -12,6 +13,20 @@
   width: 184px;
 }
 
+a.btn_black,
 .btn_black {
   border-color: #0D4A59;
+}
+
+a.btn_white,
+.btn_white {
+  border-color: #fff;
+  color: #fff;
+}
+
+a.btn_blue,
+.btn_blue {
+  color: #fff;
+  border-color: #3891B3;
+  background-color: #3891B3;
 }
