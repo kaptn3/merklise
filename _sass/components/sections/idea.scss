@@ -38,3 +38,39 @@
 .section-idea__text {
   font-size: 20px;
 }
+
+.idea_consulting {
+  background: url('../img/idea-section-bg.png') no-repeat center;
+  background-size: cover;
+  margin-bottom: 315px;
+}
+
+.idea_consulting__wrapper {
+  border-left: 1px solid rgba($color: #fff, $alpha: .5);
+  color: #fff;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.idea_consulting__wrapper > article {
+  border-left: 3px solid #fff;
+  max-width: 843px;
+  padding-left: 81px;
+}
+
+.idea_consulting__intro > p {
+  font-weight: bold;
+}
+
+.idea_consulting__title {
+  line-height: 69px;
+  font-size: 60px;
+  margin-bottom: 45px;
+}
+
+.idea_consulting__wrapper p {
+  line-height: 31px;
+  font-size: 22px;
+  text-align: justify;
+}
