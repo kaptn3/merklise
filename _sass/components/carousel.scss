@@ -1,0 +1,16 @@
+.carousel-btn {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  opacity: .2;
+  vertical-align: middle;
+  border: 3px solid #3891B3;
+  border-radius: 100%;
+}
+
+.carousel-btn_active {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #3891B3;
+  opacity: .8;
+}
