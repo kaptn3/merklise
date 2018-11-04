@@ -1,28 +1,3 @@
-.partners-section {
-  position: relative;
-  padding-bottom: 208px;
-}
-
-.partners-section__title {
-  margin-bottom: 28px;
-}
-
-.partners-section__list,
-.partners__list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.partners-section__img {
-  position: absolute;
-  bottom: -48px;
-  right: 0;
-}
-
 .partners__wrapper {
   border-left: 1px solid rgba($color: #3891B3, $alpha: .5);
   margin-bottom: 110px;
@@ -63,6 +38,12 @@
   flex-wrap: wrap;
   width: 911px;
   flex-shrink: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .partners__list-item {

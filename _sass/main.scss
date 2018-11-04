@@ -16,20 +16,22 @@
         'components/footer-contact.scss';
 
 // education sections
-@import 'components/sections/idea.scss',
-        'components/sections/courses.scss',
-        'components/sections/events.scss',
-        'components/sections/registration.scss',
-        'components/sections/partners.scss';
+@import 'components/education/idea.scss',
+        'components/education/courses.scss',
+        'components/education/events.scss',
+        'components/education/registration.scss',
+        'components/education/partners.scss';
 
 // consulting sections
 
-@import 'components/sections/network.scss',
-        'components/sections/team.scss',
-        'components/sections/offer.scss',
-        'components/sections/features.scss',
-        'components/sections/subscribe.scss';
+@import 'components/consulting/network.scss',
+        'components/consulting/idea.scss',
+        'components/consulting/team.scss',
+        'components/consulting/offer.scss',
+        'components/consulting/features.scss',
+        'components/consulting/subscribe.scss',
+        'components/consulting/carousel.scss',
+        'components/consulting/partners.scss';
 
 @import 'components/button.scss',
-        'components/title.scss',
-        'components/carousel.scss';
+        'components/title.scss';
