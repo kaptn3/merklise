@@ -2,8 +2,10 @@ function changePadding() {
   const container = document.querySelector('.consulting__container');
   const headerLeft = document.querySelector('.header__left');
   
-  const margin = getComputedStyle(container).marginLeft;
-  headerLeft.style.marginLeft = margin;
+  if (headerLeft) {
+    const margin = getComputedStyle(container).marginLeft;
+    headerLeft.style.marginLeft = margin;
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
