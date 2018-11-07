@@ -23,8 +23,9 @@
         'components/education/partners.scss';
 
 // consulting sections
-
-@import 'components/consulting/network.scss',
+@import 'components/consulting/header-right.scss',
+        'components/consulting/header-left.scss',
+        'components/consulting/network.scss',
         'components/consulting/idea.scss',
         'components/consulting/team.scss',
         'components/consulting/offer.scss',

@@ -1,5 +1,5 @@
 <header class="header header_consulting">
-  <div class="header__wrapper_consulting consulting__container">
+  <div class="header__wrapper_consulting">
     <div class="header__left">
       <div class="header__left-wrapper">
         <div class="header__logo">
@@ -7,7 +7,7 @@
             <img class="header__logo-img" src="{{ 'assets/img/logo-white.svg' | absolute_url }}" alt="Merclize">
           </a>
         </div>
-        <nav>
+        <nav class="header-nav">
           <ul class="header__nav">
             <li><a class="header__nav-item header__nav-item_active" href="#">WHAT WE OFFER</a></li>
             <li><a class="header__nav-item" href="#network">NETWORK</a></li>
@@ -34,7 +34,45 @@
         </div>
       </article>
     </div><!-- end header-left -->
-    <div class="header__right">
-    </div>
+    <aside class="header-right">
+      <div class="header-elements">
+        <div>
+          <a href="#">EN</a>
+          <button href="#" class="header-elements__search"><img src="/assets/icons/search.svg" alt="Search"></button>
+        </div>
+        <span class="header-elements__social">
+          <a href="#"><img src="/assets/icons/facebook.svg" alt="facebook"></a>
+          <a href="#" class="header-elements__icon"><img class="header-elements__icon-img" src="/assets/icons/twitter-white.svg" alt="twitter"></a>
+        </span>
+      </div>
+      <ul class="side-menu">
+        <li class="side-menu__item side-menu__item_active">
+          <h3 class="side-menu__title">People</h3>
+          <p>Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+        </li>
+        <li class="side-menu__item">
+          <h3 class="side-menu__title">Idea</h3>
+        </li>
+        <li class="side-menu__item">
+          <h3 class="side-menu__title">Plan</h3>
+        </li>
+        <li class="side-menu__item">
+          <h3 class="side-menu__title">Delivery</h3>
+        </li>
+        <li class="side-menu__item">
+          <h3 class="side-menu__title">About</h3>
+        </li>
+        <li class="side-menu__item">
+          <h3 class="side-menu__title">Contact</h3>
+        </li>
+      </ul>
+      <div class="header-video">
+        <video class="header-video__item" controls preload="true">
+          <source src="https://htmlacademy.ru/assets/courses/73/uxtesting.mp4" type="video/mp4">
+          <source src="https://htmlacademy.ru/assets/courses/73/uxtesting.webm" type="video/webm">
+          <source src="https://htmlacademy.ru/assets/courses/73/uxtesting.ogg" type="video/ogg">
+        </video>
+      </div>
+    </aside>
   </div>
 </header>
