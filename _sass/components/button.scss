@@ -11,6 +11,8 @@ a.btn,
   border-radius: 40px;
   display: block;
   width: 184px;
+  background-color: transparent;
+  transition: .2s background-color;
 }
 
 a.btn_black,
@@ -29,4 +31,37 @@ a.btn_blue,
   color: #fff;
   border-color: #3891B3;
   background-color: #3891B3;
+}
+
+.btn_active
+a.btn:hover,
+.btn:hover,
+a.btn:focus,
+.btn:focus {
+  background-color: rgba(37, 135, 0, .5);
+  color: #fff;
+}
+
+a.btn_black:hover,
+.btn_black:hover,
+a.btn_black:focus,
+.btn_black:focus {
+  background-color: rgba($color: #0D4A59, $alpha: .5);
+  color: #fff;
+}
+
+a.btn_white:hover,
+.btn_white:hover,
+a.btn_white:focus,
+.btn_white:focus {
+  background-color: rgba($color: #fff, $alpha: .5);
+  color: #0D4A59;
+}
+
+a.btn_blue:hover,
+.btn_blue:hover,
+a.btn_blue:focus,
+.btn_blue:focus {
+  color: #3891B3;
+  background-color: transparent;
 }
