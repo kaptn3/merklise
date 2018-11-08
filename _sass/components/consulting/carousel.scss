@@ -1,16 +1,41 @@
-.carousel-btn {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  opacity: .2;
-  vertical-align: middle;
-  border: 3px solid #3891B3;
-  border-radius: 100%;
+.slide {
+  position: absolute;
+  top: 0;
+  visibility: hidden; opacity: 0;
+  transition: visibility 0s, opacity .4s ease-out;
 }
 
-.carousel-btn_active {
-  width: 15px;
-  height: 15px;
-  border: 2px solid #3891B3;
-  opacity: .8;
+.slide_visible {
+  position: static;
+  visibility: visible; 
+  opacity: 1;
+}
+
+.carousel-btns {
+  &__btn {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background: url('../icons/dot.svg') no-repeat center;
+  }
+
+  &__btn_active {
+    background-image: url('../icons/dot-active.svg');
+  }
+  
+  /*&__inner {
+    width: 6px;
+    height: 6px;
+    opacity: .2;
+    border: 3px solid #3891B3;
+    border-radius: 100%;
+  }
+
+  &__inner_active {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #3891B3;
+    opacity: .8;
+  }*/
 }
