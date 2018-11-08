@@ -6,7 +6,8 @@
 
 @import 'layouts/container',
         'layouts/header',
-        'layouts/footer';
+        'layouts/footer',
+        'layouts/main-page';
 
 @import 'components/header-nav',
         'components/header-logo.scss',
@@ -14,6 +15,10 @@
         'components/header-bottom.scss',
         'components/footer-menu.scss',
         'components/footer-contact.scss';
+
+// main
+@import 'components/main/circle.scss',
+        'components/main/footer.scss';
 
 // education sections
 @import 'components/education/idea.scss',
