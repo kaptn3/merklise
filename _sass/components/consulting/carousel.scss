@@ -2,13 +2,14 @@
   position: absolute;
   top: 0;
   visibility: hidden; opacity: 0;
-  transition: visibility 0s, opacity .4s ease-out;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
 .slide_visible {
   position: static;
   visibility: visible; 
   opacity: 1;
+  transition-delay: 0s;
 }
 
 .carousel-btns {
@@ -23,19 +24,4 @@
   &__btn_active {
     background-image: url('../icons/dot-active.svg');
   }
-  
-  /*&__inner {
-    width: 6px;
-    height: 6px;
-    opacity: .2;
-    border: 3px solid #3891B3;
-    border-radius: 100%;
-  }
-
-  &__inner_active {
-    width: 15px;
-    height: 15px;
-    border: 2px solid #3891B3;
-    opacity: .8;
-  }*/
 }

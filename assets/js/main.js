@@ -17,23 +17,37 @@ window.onresize = function() {
 }
 
 // Sliders
-const sliderDots = document.querySelectorAll('.carousel-btns__btn');
+const slidersClassNames = [
+  [ '.partners__list', '.partners__carousel-btns' ],
+  [ '.network__list', '.network__carousel-btns' ],
+  [ '.team__inner', '.team__carousel-btns']
+];
+
+const sliderDots = [];
+const slides = [];
 let currentSlide = 0;
-let slides = document.querySelectorAll('.partners__list');
 
-const goToSlide = (n) => {
-  currentSlide = n;
-  const activeSlide = document.getElementsByClassName('slide_visible')[0];
+for (let i = 0; i < slidersClassNames.length; i++) {
+  slides.push(document.querySelectorAll(slidersClassNames[i][0]));
+  sliderDots.push(document.querySelectorAll(`${slidersClassNames[i][1]} > .carousel-btns__btn`));
+}
+
+const goToSlide = (m, i) => {
+  currentSlide = m;
+  const activeSlide = document.querySelector(`${slidersClassNames[i][0]}.slide_visible`); // here
   activeSlide.classList.remove('slide_visible');
-  slides[currentSlide].classList.add('slide_visible');
+  slides[i][currentSlide].classList.add('slide_visible');
 
-  const activeDot = document.getElementsByClassName('carousel-btns__btn_active')[0];
+  const activeDot = document.querySelector(`${slidersClassNames[i][1]} > .carousel-btns__btn_active`); // here
   activeDot.classList.remove('carousel-btns__btn_active');
-  sliderDots[currentSlide].classList.add('carousel-btns__btn_active');
+  sliderDots[i][currentSlide].classList.add('carousel-btns__btn_active');
+  console.log(activeDot, activeSlide);
 };
 
-for(let i = 0; i < sliderDots.length; i++) {
-  sliderDots[i].addEventListener('click', () => {
-    goToSlide(i);
-  });
+for (let i = 0; i < sliderDots.length; i++) { // sections with slider
+  for (let m = 0; m < sliderDots[i].length; m++) { // buttons
+    sliderDots[i][m].addEventListener('click', () => {
+      goToSlide(m, i);
+    });
+  }
 }
