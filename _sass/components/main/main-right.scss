@@ -1,0 +1,17 @@
+.main-right {
+  margin-right: 48px;
+  padding-top: 143px;
+
+  &__text {
+    margin-bottom: 47px;
+    padding-left: 268px;
+    font-weight: 600;
+    line-height: 35px;
+    font-size: 20px;
+    color: #0D4A59;
+  }
+
+  &__text_more {
+    font-weight: normal;
+  }
+}

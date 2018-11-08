@@ -2,12 +2,20 @@
 layout: default
 ---
 <div class="main-page">
-  <main>
+  <main class="main-wrapper">
+    <div class="main-left"></div>
+    <div class="main-right">
+      <div class="main-right__text">
+        <span>Need consulting ? Or want to learn something new ?</span><br>
+        <span class="main-right__text_more">We have all you need. Explore now! </span>
+      </div>
+      <img src="{{ '/assets/img/main-image.svg' | absolute_url }}" alt="Main image" width="982" height="640">
+    </div>
   </main>
   <footer class="main-page-footer">
     <nav class="main-page-footer__nav">
-      <a class="main-page-footer__btn" href="/education">Education</a>
-      <a class="main-page-footer__btn main-page-footer__btn_education" href="/consulting">Consulting</a>
+      <a class="main-page-footer__btn" href="{{ '/education' | absolute_url }}">Education</a>
+      <a class="main-page-footer__btn main-page-footer__btn_education" href="{{ '/consulting' | absolute_url }}">Consulting</a>
     </nav>
   </footer>
   <div class="main-circle"></div>
