@@ -2,64 +2,64 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 244px;
-}
 
-.features__item {
-  max-width: 520px;
-  margin: 0 18px;
-}
+  &__wrapper {
+    max-width: 520px;
+    margin: 0 18px;
 
-.features__item:first-child {
-  margin-left: 0;
-}
+    &:first-child {
+      margin-left: 0;
+    }
 
-.features__item:last-child {
-  margin-right: 0;
-}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-.features__title {
-  background: rgba($color: #3891B3, $alpha: .3);
-  color: #fff;
-  text-align: center;
-  line-height: 62px;
-  font-size: 35px;
-  text-transform: uppercase;
-  padding: 19px 0;
-  font-weight: normal;
-}
+  &__title {
+    background: rgba($color: #3891B3, $alpha: .3);
+    color: #fff;
+    text-align: center;
+    line-height: 62px;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 19px 0;
+    font-weight: normal;
 
-.features__title_premium {
-  background: rgba($color: #3891B3, $alpha: .5);
-}
+    &_premium {
+      background: rgba($color: #3891B3, $alpha: .5);
+    }
 
-.features__title_packages {
-  background: rgba($color: #3891B3, $alpha: .7);
-}
+    &_packages {
+      background: rgba($color: #3891B3, $alpha: .7);
+    }
+  }
 
-.features__list {
-  list-style: none;
-  padding: 0 52px;
-  margin: 0;
-  font-style: normal;
-  line-height: 39px;
-  font-size: 22px;
-  text-align: center;
-}
+  &__list {
+    list-style: none;
+    padding: 0 52px;
+    margin: 0;
+    font-style: normal;
+    line-height: 39px;
+    font-size: 22px;
+    text-align: center;
+  }
 
-.features__list > li {
-  border-bottom: 3px solid rgba($color: #3891B3, $alpha: .3);
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
+  &__item {
+    border-bottom: 3px solid rgba($color: #3891B3, $alpha: .3);
+    padding-bottom: 30px;
+    padding-top: 30px;
 
-.features__list_premium > li {
-  border-color: rgba($color: #0D4A59, $alpha: .5)
-}
+    &_premium {
+      border-color: rgba($color: #0D4A59, $alpha: .5)
+    }
 
-.features__list_packages > li {
-  border-color: rgba($color: #3891B3, $alpha: .7)
-}
+    &_packages {
+      border-color: rgba($color: #3891B3, $alpha: .7)
+    }
 
-.features__list > li:last-child {
-  border-bottom-width: 0;
+    &:last-child {
+      border-bottom-width: 0;
+    }
+  }
 }

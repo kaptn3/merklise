@@ -1,6 +1,6 @@
 function changePadding() {
   const container = document.querySelector('.consulting__container');
-  const headerLeft = document.querySelector('.header__left');
+  const headerLeft = document.querySelector('.header-left');
   
   if (headerLeft) {
     const margin = getComputedStyle(container).marginLeft;
@@ -19,7 +19,7 @@ window.onresize = function() {
 // Sliders
 const slidersClassNames = [
   [ '.partners__list', '.partners__carousel-btns' ],
-  [ '.network__list', '.network__carousel-btns' ],
+  [ '.network-list', '.network__carousel-btns' ],
   [ '.team__inner', '.team__carousel-btns']
 ];
 

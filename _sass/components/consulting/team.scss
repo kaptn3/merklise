@@ -1,77 +1,79 @@
-.team__wrapper {
-  margin-bottom: 162px;
-}
+.team {
+  &__wrapper {
+    margin-bottom: 162px;
+  }
 
-.team__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  border-right: 1px solid rgba($color: #3891B3, $alpha: .5);
-  font-size: 22px;
-  font-family: 'Google Sans', sans-serif;
-  text-align: justify;
-}
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-right: 1px solid rgba($color: #3891B3, $alpha: .5);
+    font-size: 22px;
+    font-family: 'Google Sans', sans-serif;
+    text-align: justify;
+  }
 
-.team__title {
-  justify-content: flex-end;
-  border-right: 3px solid #3891B3;
-}
+  &__title {
+    justify-content: flex-end;
+    border-right: 3px solid #3891B3;
+  }
 
-.team__content {
-  display: flex;
-  align-items: center;
-  width: 794px;
-  margin-bottom: 34px;
-  padding-right: 60px;
-}
+  &__content {
+    display: flex;
+    align-items: center;
+    width: 794px;
+    margin-bottom: 34px;
+    padding-right: 60px;
+  }
 
-.team__content-first {
-  order: -1;
-}
+  &__content-first {
+    order: -1;
+  }
 
-.team__content-img {
-  position: relative;
-}
+  &__photo {
+    position: relative;
 
-.team__content-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transition: .2s opacity;
-  background: linear-gradient(224.71deg, #00FFFF -2.08%, #071464 79.49%), #FFFFFF;
-}
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: .2s opacity;
+      background: linear-gradient(224.71deg, #00FFFF -2.08%, #071464 79.49%), #FFFFFF;
+    }
 
-.team__content-img:hover:after {
-  opacity: .6;
-}
+    &:hover:after {
+      opacity: .6;
+    }
+  }
 
-.team__content-info {
-  margin-left: 57px;
-}
+  &__info {
+    margin-left: 57px;
+  }
 
-.team__content-info > h3 {
-  color: #3891B3;
-  margin-bottom: 1em;
-}
+  &__name {
+    color: #3891B3;
+    margin-bottom: 1em;
+  }
 
-.team__content-info > p {
-  line-height: 31px;
-}
+  &__about {
+    line-height: 31px;
+  }
 
-.team__content-info > span > a:first-child {
-  margin-left: 0;
-}
+  &__social {
+    margin: 0 11px;
 
-.team__content-info > span > a {
-  margin: 0 11px
-}
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 
-.team__carousel-btns {
-  margin-top: 78px;
-  text-align: center;
+  &__carousel-btns {
+    margin-top: 78px;
+    text-align: center;
+  }
 }

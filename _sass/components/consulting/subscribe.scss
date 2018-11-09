@@ -7,25 +7,25 @@
   display: flex;
   align-items: center;
   color: #fff;
-}
 
-.subscribe-section__form {
-  padding: 0 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  &__form {
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.subscribe-section__title {
-  font-family: 'Google Sans', sans-serif;
-  line-height: 66px;
-  font-size: 40px;
-  font-weight: normal;
-}
+  &__title {
+    font-family: 'Google Sans', sans-serif;
+    line-height: 66px;
+    font-size: 40px;
+    font-weight: normal;
+  }
 
-.subscribe-section__input {
-  font-size: 20px;
-  width: 686px;
-  padding: 19px 34px 14px 34px;
-  color: #0D4A59;
+  &__input {
+    font-size: 20px;
+    width: 686px;
+    padding: 19px 34px 14px 34px;
+    color: #0D4A59;
+  }
 }
