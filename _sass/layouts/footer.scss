@@ -1,29 +1,28 @@
 .footer {
   background-color: rgba($color: #E2EFDE, $alpha: .7);
   color: #2D2D2D;
-}
 
-.footer > .education__container,
-.footer > .consulting__container {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  height: 316px;
-}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 316px;
+  }
 
-.footer__logo-n-social {
-  text-align: center;
-}
+  &__logo-n-social {
+    text-align: center;
+  }
 
-.footer__logo {
-  margin-bottom: 28px;
-}
+  &__logo {
+    margin-bottom: 28px;
+  }
 
-.footer__social-link:first-child {
-  margin-right: 28px;
-}
+  &__social-link:first-child {
+    margin-right: 28px;
+  }
 
-.footer_consulting {
-  background-color: #3891B3;
-  color: #fff;
+  &_consulting {
+    background-color: #3891B3;
+    color: #fff;
+  }
 }

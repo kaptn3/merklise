@@ -5,34 +5,16 @@
   background-position: top right;
   background-size: contain;
   position: relative;
-}
 
-.header__top {
-  padding-top: 63px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
-}
+  &_consulting {
+    background: url('../img/bg-consulting.png') no-repeat center right;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+  }
 
-.header__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header_consulting {
-  background: url('../img/bg-consulting.png') no-repeat center right;
-  background-size: cover;
-  color: #fff;
-  display: flex;
-}
-
-.header__wrapper_consulting {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__left-wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 143px;
+  .header__wrapper_consulting {
+    display: flex;
+    justify-content: space-between;
+  }
 }

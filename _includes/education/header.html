@@ -1,16 +1,16 @@
 <header class="header">
-  <div class="education__container header__top">
-    <div class="header__logo">
+  <div class="education__container header-top">
+    <div class="header-top__logo">
       <a href="{{ site.url }}">
         <img class="header__logo-img" src="{{ 'assets/img/logo.svg' | absolute_url }}" alt="Merclize">
       </a>
     </div>
-    <nav>
-      <ul class="header__nav">
-        <li><a class="header__nav-item header__nav-item_active" href="#">CURRENT COURSES</a></li>
-        <li><a class="header__nav-item" href="#event-calendar">EVENT CALENDAR</a></li>
-        <li><a class="header__nav-item" href="#registration">REGISTRATIONS</a></li>
-        <li><a class="header__nav-item" href="#contact">CONTACT</a></li>   
+    <nav class="nav-top">
+      <ul class="nav-top__list">
+        <li><a class="nav-top__item nav-top__item_active" href="#">CURRENT COURSES</a></li>
+        <li><a class="nav-top__item" href="#event-calendar">EVENT CALENDAR</a></li>
+        <li><a class="nav-top__item" href="#registration">REGISTRATIONS</a></li>
+        <li><a class="nav-top__item" href="#contact">CONTACT</a></li>   
       </ul>
     </nav>
     <div class="header__sign">
@@ -18,19 +18,20 @@
       <a href="#" class="btn btn_black">Register</a>
     </div>
   </div><!-- end header-top -->
-  <div class="education__container header__bottom">
-    <div class="header__bottom-text">
-      <div class="header__bottom-title">The only source of KNOWLEDGE is experience
-        <img src="{{ 'assets/img/ellipse.svg' | absolute_url }}">
+
+  <div class="education__container header-bottom">
+    <div class="header-bottom__text">
+      <div class="header-bottom__title">The only source of KNOWLEDGE is experience
+        <img class="header-bottom__img-ellipse" src="{{ 'assets/img/ellipse.svg' | absolute_url }}">
       </div>
-      <p class="header__bottom-need">Need consulting ? Or want to learn something new ? We have all you need. Explore now!</p>
-      <div class="header__bottom-btn-group">
+      <p class="header-bottom__need-text">Need consulting ? Or want to learn something new ? We have all you need. Explore now!</p>
+      <div class="header-bottom__btn-group">
         <a href="#" class="btn">Consulting</a>
         <a href="#" class="btn btn_black">Education</a>
       </div>
     </div>
-    <div class="header__bottom-image">
-      <img src="{{ 'assets/img/header-img.svg' | absolute_url }}" alt="The only source of KNOWLEDGE is experience">
+    <div class="header-bottom__img-wrapper">
+      <img class="header-bottom__img" src="{{ 'assets/img/header-img.svg' | absolute_url }}" alt="The only source of KNOWLEDGE is experience">
     </div>
   </div>
 </header>

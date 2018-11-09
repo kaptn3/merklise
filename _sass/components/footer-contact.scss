@@ -1,28 +1,31 @@
-.footer__contact {
-  width: 21%;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 27px;
-}
+.footer {
 
-.footer__contact > span {
-  display: block;
-}
+  &__contacts {
+    width: 21%;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+  }
 
-.footer__contact > p {
-  color: #258700;
-  margin-bottom: 1em;
-}
+  &__contact {
+    display: block;
+  }
 
-.footer__contact_consulting > p {
-  color: #fff;
-}
+  &__contact-text {
+    color: #258700;
+    margin-bottom: 1em;
+  }
 
-.footer__contact-link {
-  font-weight: normal;
-  color: #2d2d2d;
-}
+  &__contact-text_consulting {
+    color: #fff;
+  }
 
-.footer__contact-link_consulting {
-  color: #fff;
+  &__contact-link {
+    font-weight: normal;
+    color: #2d2d2d;
+  }
+
+  &__contact-link_consulting {
+    color: #fff;
+  }
 }

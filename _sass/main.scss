@@ -12,7 +12,6 @@
 @import 'components/header-nav',
         'components/header-logo.scss',
         'components/header-sign.scss',
-        'components/header-bottom.scss',
         'components/footer-menu.scss',
         'components/footer-contact.scss';
 
@@ -23,7 +22,9 @@
         'components/main/footer.scss';
 
 // education sections
-@import 'components/education/idea.scss',
+@import 'components/education/header-top.scss',
+        'components/education/header-bottom.scss',
+        'components/education/idea.scss',
         'components/education/courses.scss',
         'components/education/events.scss',
         'components/education/registration.scss',

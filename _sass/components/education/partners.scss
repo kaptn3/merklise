@@ -1,24 +1,24 @@
 .partners-section {
   position: relative;
   padding-bottom: 208px;
-}
 
-.partners-section__title {
-  margin-bottom: 28px;
-}
 
-.partners-section__list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
-  align-items: center;
-}
+  &__title {
+    margin-bottom: 28px;
+  }
 
-.partners-section__img {
-  position: absolute;
-  bottom: -48px;
-  right: 0;
-}
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  &__img {
+    position: absolute;
+    bottom: -48px;
+    right: 0;
+  }
+}

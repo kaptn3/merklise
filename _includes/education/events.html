@@ -1,20 +1,22 @@
 <section id="event-calendar" class="section-events">
   <h2 class="h2-title section-events__title">Upcoming events</h2>
   <div class="education__container">
-    <ul class="section-events__posts-list">
+    <ul class="events-list">
     {% for post in site.categories['event'] limit:3 %}
-      <li class="section-events__post">
-        <a class="section-events__post-img" href="{{ post.url }}">
-          <img src="{{ '/assets/post-images/' | absolute_url }}{{ post.image }}" alt="{{ post.title }}">
+      <li class="event">
+        <a class="event__img-wrapper" href="{{ post.url }}">
+          <img class="event__img" src="{{ '/assets/post-images/' | absolute_url }}{{ post.image }}" alt="{{ post.title }}">
         </a>
-        <article class="section-event__post-article">
-          <div class="section-events__post-meta">
+        <article class="event__content">
+          <div class="event__meta">
             <span>{{ post.location }}</span>
-            <span><img src="{{ '/assets/icons/clock.svg' | absolute_url }}" alt=""> {{ post.date | date: "%d.%m.%Y" }}</span>
+            <span class="event__date">
+              <img class="event__date-icon" src="{{ '/assets/icons/clock.svg' | absolute_url }}" alt=""> {{ post.date | date: "%d.%m.%Y" }}
+            </span>
           </div>
-          <a href="{{ post.url }}"><h3 class="section-events__post-title">{{ post.title }}</h3></a>
+          <a href="{{ post.url }}"><h3 class="event__title">{{ post.title }}</h3></a>
           {{ post.excerpt }}
-          <a class="section-events__post-link" href="{{ post.url }}">Read more</a>
+          <a class="event__more" href="{{ post.url }}">Read more</a>
         </article>
       </li>
     {% endfor %}
