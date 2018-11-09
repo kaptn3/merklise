@@ -35,6 +35,10 @@
   transform: scale(0);
 }
 
+.header__nav-item_consulting:after {
+  border-top-color: #fff;
+}
+
 .header__nav-item_active:after,
 .header__nav > li:hover .header__nav-item:after,
 .header__nav > li:focus .header__nav-item:after {
