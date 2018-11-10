@@ -1,6 +1,7 @@
 .main-right {
-  margin-right: 48px;
+  margin-right: 100px;
   padding-top: 143px;
+  width: 50%;
 
   &__text {
     margin-bottom: 47px;
@@ -13,5 +14,11 @@
 
   &__text_more {
     font-weight: normal;
+  }
+}
+
+@media (max-width: 2150px) {
+  .main-right {
+    margin-right: 48px;
   }
 }

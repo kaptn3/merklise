@@ -1,6 +1,6 @@
 .main-left {
   display: flex;
-  width: 100%;
+  width: 50%;
   margin-left: 147px;
   padding-top: 83px;
 
@@ -12,11 +12,16 @@
     color: #fff;
     max-width: 394px;
     margin-left: auto;
-    margin-right: -110px;
   }
 }
 
 .knowledge {
   font-size: 58px;
   line-height: 62px;
+}
+
+@media (max-width: 2150px) {
+  .main-left__text {
+    margin-right: -110px;
+  }
 }
