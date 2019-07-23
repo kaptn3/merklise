@@ -12,10 +12,26 @@ html {
 }
 
 body {
-  min-width: 1920px; // fallback
-  min-width: fit-content;
+  min-width: 1920px;
   color: #2D2D2D;
-  //min-width: 320px;
+}
+
+@media (max-width: 1919px) {
+  body {
+    zoom: 80%;
+  }
+}
+
+@media (max-width: 1538px) {
+  body {
+    zoom: 70%;
+  }
+}
+
+@media (max-width: 1350px) {
+  body {
+    zoom: 50%;
+  }
 }
 
 div {
